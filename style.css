@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html, body{
+    max-height: 100%;
+}  
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+/*CSS reset code*/
+/*Fonts that were used in this exercise*/
+@font-face {
+  font-family: 'Karla';
+  src: url(/Karla/Karla-VariableFont_wght.ttf);
+}
+/*Basic body code*/
+body{
+  font-family: 'Karla',sans-serif;
+  max-width: 1440px;
+  background-color: hsl(204, 43%, 93%);
+  font-size: 1rem;
+}
+/*Code for container all elements with 100vh we have
+positioned it in center and with flex*/
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-left: 190px;
+}
+/*Code for the cards that are in the container*/
+.content{
+  height: 450px;
+  width: 650px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+/*With grid we created two separate cards and always
+define columns than rows,and rows define if you need*/
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+/*Code for top card*/
+.top-card{
+  padding: 40px;
+}
+/*Code for the header,top card*/
+.header{
+  font-size: 24px;
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+/*Code for the subtext of the header,top card*/
+.header-subtext{
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+/*Code for the text of the header,top card*/
+.header-text{
+  color: hsl(218, 22%, 67%);
+  font-weight: 400;
+}
+/*Code for the left side card*/
+.left-side{
+  background-color: rgba(43, 179, 177);
+  padding: 40px;
+  height: 247px;
+  color: hsl(204, 43%, 93%);
+  border-bottom-left-radius: 5px;
+}
+/*Code for the left side header*/
+.left-side-header{
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+/*Code for the price and with span period,I was able to create
+the way its supposed to be*/
+.price{
+   font-size: 30px;
+   font-weight: 700;
+}
+.period{
+  color: hsl(218, 22%, 67%);
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 5px;
+  vertical-align: 5px;/*Moves text up*/
+}
+/*Code for the text below price*/
+.about-text{
+  color: hsl(204, 43%, 93%);
+  font-weight: 400;
+  margin-bottom: 22px;
+}
+/*Code for the sign up button*/
+.sign-up-button{
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  width: 250px;
+  height: 50px;
+  cursor: pointer;
+}
+/*Code for the sign up button hover effect*/
+.sign-up-button:hover{
+  background-color: rgba(74, 190, 189);
+}
+/*Code for the right side card*/
+.right-side{
+  background-color: rgba(74, 190, 189);
+  color: hsl(204, 43%, 93%);
+  border-bottom-right-radius: 5px;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+/*Code for the right side header text*/
+.right-side-header{
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+/*Code for the right side text below header*/
+.right-side-text{
+  font-size: 14px;
+  font-weight: 400;
+  padding-right: 110px;
+}
+/*Code for the attribution text*/
+.attribution{
+  font-weight: 900;
+  color: hsl(71, 73%, 54%);
+  font-size: 1rem;
+  margin-left: 200px;
+}  
+/*Code for the attribution links*/
+.attribution a{
+  color: hsl(179, 62%, 43%);
+  text-decoration: none;
+} 
+/*Code for the attribution links,hover effect*/
+.attribution a:hover{
+  color: hsl(71, 73%, 54%);
+  cursor: pointer;
+}
